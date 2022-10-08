@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>myBeautyBudget</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/xyj7upq.css">
+
+</head>
+<body class="container">
+
+    <nav class="navbar navbar-light" style="padding: 5px; border-radius: 5px; background-color: #e3f2fd; 
+    font-family: marigny, sans-serif; font-weight: 400; font-style: normal">
+        <a class="navbar-brand" href="budget.html">
+            <img src="Beauty budget brand art.png" width="30" height="25" class="d-inline-block align-top" alt="">
+            myBeautyBudget
+          </a>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">myBudget</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BeautyBudget Tips</a>
+            </li>
+          </ul>
+          </nav>
+      </nav>
+
+      <br>
+<div class="card-group">
+    <div class="card w-50">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="budget" style="font-size:large; text-decoration: underline; ">Total Monthly Budget</label><br>
+                        <p>Inlcude all beauty services (hair, nails, waxing, etc.) and makeup.</p>
+                        
+                        <input type="text" class="form-control" id="budget" placeholder="ex: 300.00">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div>
+                <button id="budget" class="btn btn-primary form-control">Create myBudget</button>
+            </div>
+        </div>
+    </div> 
+
+    <br>
+
+    <div class="card w-50">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-service">Service or Store</label><br>
+                        <input type="text" class="form-control" id="new-service" placeholder="ex: Hair">
+                    </div>
+                </div>
+    
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-cost">Cost</label>
+                        <input type="number" class="form-control" id="new-cost" placeholder="ex: 45.00">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-date">Date</label>
+                        <input type="date" class="form-control" id="new-date">
+                    </div>
+                </div>
+            </div>
+    
+            <br>
+    
+            <div>
+                <button id="add" class="btn btn-success from-control">Add</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <br>
+
+    <table id="list" class="table table-info table-striped" >
+        <tr>
+            <th>Service/Store</th>
+            <th>Cost</th>
+            <th>Date</th>
+            <th>Remove</th>
+        </tr>
+    </table>
+
+    <script src="budget.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>
